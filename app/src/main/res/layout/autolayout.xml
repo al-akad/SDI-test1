@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linearlayoutid"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:analog="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/item_background"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Layout.org.layoutlib.Analogdisplay
+        android:id="@+id/analogdisplay"
+        android:layout_width="266dp"
+        android:layout_height="227dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="1dp"
+        analog:divisions="8"
+        analog:rangeValues="@array/speedTestRangeValues"
+        analog:scaleEndValue="5000"
+        analog:showInnerRim="false"
+        analog:showNeedle="true"
+        analog:showOuterBorder="false"
+        analog:showOuterRim="true"
+        analog:showOuterShadow="false"
+        analog:showRangeText="true"
+        analog:showRanges="true"
+        analog:showScale="true"
+        analog:subdivisions="1"
+        analog:textUnit="RPM/s"
+        analog:textUnitSize="0.06"
+        analog:textValueSize="0.15" />
+
+    <Layout.org.layoutlib.AutoLayoutlib
+        android:layout_marginTop="-80dp"
+        android:layout_width="fill_parent"
+        android:layout_height="246dp" >
+
+
+    </Layout.org.layoutlib.AutoLayoutlib>
+
+
+    <NumberPicker
+        android:id="@+id/DrehZahl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="250px"
+        android:textColor="@color/black1"
+        android:background="@color/grey"
+        android:paddingLeft="25px"
+        android:paddingTop="20px"
+        />
+
+
+</LinearLayout>

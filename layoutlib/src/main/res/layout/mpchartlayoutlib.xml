@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:ap="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="350dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="250dp"
+        android:id="@+id/graph" />
+
+    <com.androidplot.xy.XYPlot
+        style="@style/APDefacto.Dark"
+        android:layout_marginTop="20dp"
+        android:id="@+id/plot"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        ap:title="Parameter Value"
+        ap:rangeTitle="Value"
+        ap:domainTitle="Time"
+        ap:titleTextSize="20dp"
+        ap:titleTextColor="@color/orange1"
+        ap:lineLabels="left|bottom"
+        ap:lineLabelRotationBottom="-90"
+        />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+ {
+       "apps": {
+               "CAN_APP_DECODER": {
+                "name": "CAN_APP_DECODER",
+                "type": "CAN_APP_DECODER",
+                "params": {
+                           "Can_Adr": {
+                           "name": "Can_Adr",
+                            "unit": 4,
+                            "value": 394,
+                            "type": "int"
+                             },
+                            "Can_Length": {
+                            "name": "Can_Length",
+                            "unit": 4,
+                            "value": 7,
+                            "type": "int"
+                             },
+                            "Can_Offset": {
+                            "name": "Can_Offset",
+                            "unit": 4,
+                            "value": 0,
+                            "type": "int"
+                             },
+                            "Can_Write_Adr": {
+                            "name": "Can_Write_Adr",
+                            "unit": 4,
+                           "value": 394,
+                            "type": "int"
+                             },
+                            "Can_Write_Length": {
+                            "name": "Can_Write_Length",
+                            "unit": 4,
+                            "value": 7,
+                            "type": "int"
+                             },
+                            "Can_Write_Offset": {
+                            "name": "Can_Write_Offset",
+                            "unit": 4,
+                            "value": 0,
+                            "type": "int"
+                             },
+                            "Can_Write_Value": {
+                            "name": "Can_Write_Value",
+                            "unit": 4,
+                            "value": 7,
+                            "type": "int"
+                             }
+                     }
+                },
+                "DEBUG_APP": {
+                             "name": "DEBUG_APP",
+                             "type": "DEBUG_APP",
+                             "params": {}
+                },
+               "MAPPER_APP": {
+                             "name": "MAPPER_APP",
+                             "type": "MAPPER_APP",
+                             "params": {
+                                       "Mapper_Offset": {
+                                                         "name": "Mapper_Offset",
+                                                         "unit": 4,
+                                                         "value": 0,
+                                                         "type": "int"
+                                                        },
+                                       "Mapper_Size": {
+                                                      "name": "Mapper_Size",
+                                                      "unit": 4,
+                                                      "value": 30,
+                                                      "type": "int"
+                                                      },
+                                      "Mapper_Type": {
+                                                      "name": "Mapper_Type",
+                                                      "unit": 4,
+                                                      "value": 0,
+                                                      "type": "int"
+                                                     }
+                                      }
+                             }
+               },
+        "connections":
+                          {"src": "CAN_APP_DECODER",
+                           "dest": "DEBUG_APP",
+                           "ports": [
+                                      {"src_port_nr": 0,
+                                       "dest_port_nr": 0
+                                      },
+                                      {"src_port_nr": 1,
+                                       "dest_port_nr": 1
+                                       }
+                                    ]
+                          },
+                          {"src": "DEBUG_APP",
+                           "dest": "MAPPER_APP",
+                           "ports": [
+                                      {"src_port_nr": 0,
+                                       "dest_port_nr": 0
+                                      },
+                                      {"src_port_nr": 1,
+                                       "dest_port_nr": 1
+                                      }
+                                    ]
+                           }
+                       ]
+    }

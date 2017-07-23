@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryLight">#CFD8DC</color>
+    <color name="colorAccent1">#FF4081</color>
+    <color name="colorAccent">#ffff00</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#727272</color>
+    <color name="grey">#cccccc</color>
+    <color name="orange1">#ff9900</color>
+    <color name="orange4">#FF8D1E</color>
+    <color name="orange5">#FF971F</color>
+    <color name="orange2">#ff6600</color>
+    <color name="orange3">#ff3300</color>
+    <color name="black1">#111</color>
+    <color name="black2">#f444</color>
+    <color name="black3">#f999</color>
+    <color name="wait1">#f999</color>
+    <color name="wait2">#ffff00</color>
+    <color name="wait3">#ffff00</color>
+    <color name="wait4">#353535</color>
+    <color name="wait5">#ffff00</color>
+    <color name="wait6">#FF00FF00</color>
+    <color name="wait7">#353535</color>
+    <color name="wait8">#FF535353</color>
+    <color name="wait9">#FF525252</color>
+    <color name="wait10">#FF000000</color>
+    <color name="wait11">#FF00FF00</color>
+
+
+
+
+
+
+
+
+</resources>

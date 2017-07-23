@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    tools:context="org.hello.sdi_app.MattActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/app_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:minHeight="?attr/actionBarSize"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    app:tabGravity="fill"
+                    app:tabTextAppearance="@style/TextAppearance.Design.Tab"
+                    app:tabSelectedTextColor="@color/wait1"
+                    app:tabMode="scrollable" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.14" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <Display.ang.AnalogDisplay.Analoglib.AnalogDisplay
+                        android:id="@+id/gauge_view"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="1dp"
+                        gauge:divisions="8"
+                        gauge:rangeValues="@array/speedTestRangeValues"
+                        gauge:scaleEndValue="5000"
+                        gauge:showInnerRim="false"
+                        gauge:showNeedle="true"
+                        gauge:showOuterBorder="false"
+                        gauge:showOuterRim="true"
+                        gauge:showOuterShadow="false"
+                        gauge:showRangeText="true"
+                        gauge:showRanges="true"
+                        gauge:showScale="true"
+                        gauge:subdivisions="1"
+                        gauge:textUnit="RPM/s"
+                        gauge:textUnitSize="0.06"
+                        gauge:textValueSize="0.15" />
+
+
+                    <Display.ang.AnalogDisplay.Analoglib.AnalogDisplay
+                        android:id="@+id/gauge_view1"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="1dp"
+                        gauge:divisions="8"
+                        gauge:rangeValues="@array/speedTestRangeValues"
+                        gauge:scaleEndValue="5000"
+                        gauge:showInnerRim="false"
+                        gauge:showNeedle="true"
+                        gauge:showOuterBorder="false"
+                        gauge:showOuterRim="true"
+                        gauge:showOuterShadow="false"
+                        gauge:showRangeText="true"
+                        gauge:showRanges="true"
+                        gauge:showScale="true"
+                        gauge:subdivisions="1"
+                        gauge:textUnit="Current/mA"
+                        gauge:textUnitSize="0.06"
+                        gauge:textValueSize="0.15" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <Display.ang.AnalogDisplay.Analoglib.AnalogDisplay
+                        android:id="@+id/gauge_view2"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="1dp"
+                        gauge:divisions="8"
+                        gauge:rangeValues="@array/speedTestRangeValues"
+                        gauge:scaleEndValue="5000"
+                        gauge:showInnerRim="false"
+                        gauge:showNeedle="true"
+                        gauge:showOuterBorder="false"
+                        gauge:showOuterRim="true"
+                        gauge:showOuterShadow="false"
+                        gauge:showRangeText="true"
+                        gauge:showRanges="true"
+                        gauge:showScale="true"
+                        gauge:subdivisions="1"
+                        gauge:textUnit="Voltage/v"
+                        gauge:textUnitSize="0.06"
+                        gauge:textValueSize="0.15" />
+
+
+                    <Display.ang.AnalogDisplay.Analoglib.AnalogDisplay
+                        android:id="@+id/gauge_view3"
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="1dp"
+                        android:layout_centerInParent="true"
+                        gauge:divisions="8"
+                        gauge:rangeValues="@array/speedTestRangeValues"
+                        gauge:scaleEndValue="5000"
+                        gauge:showInnerRim="false"
+                        gauge:showNeedle="true"
+                        gauge:showOuterBorder="false"
+                        gauge:showOuterRim="true"
+                        gauge:showOuterShadow="false"
+                        gauge:showRangeText="true"
+                        gauge:showRanges="true"
+                        gauge:showScale="true"
+                        gauge:subdivisions="1"
+                        gauge:textUnit="Temperature/kelvin"
+                        gauge:textUnitSize="0.06"
+                        gauge:textValueSize="0.15" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <NumberPicker
+                        android:id="@+id/numberPicker1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="32dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginLeft="30px"
+                        android:textColor="@color/black1"
+                        android:layout_marginRight="25dp"
+                        android:background="@color/grey"
+                        android:paddingLeft="25px"
+                        android:paddingTop="20px"
+                        />
+
+                    <NumberPicker
+                        android:id="@+id/numberPicker2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="17dp"
+                        android:background="@color/grey"
+                        android:textColor="@color/black1"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="25dp"
+                        android:paddingLeft="25px"
+                        android:paddingTop="25px"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="500dp"
+                        android:orientation="vertical">
+
+                        <Switch
+                            android:id="@+id/switch15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="right"
+                            android:checked="false"
+                            android:paddingRight="5dp"
+                            android:text="user_parameter"
+                            android:textColor="@color/wait3"
+                            android:textOff="@string/off"
+                            android:textOn="@string/on" />
+
+
+                        <Switch
+                            android:id="@+id/switch13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginTop="15dp"
+                            android:checked="false"
+                            android:paddingRight="5dp"
+                            android:text="run"
+                            android:textColor="@color/wait3"
+                            android:textOff="@string/off"
+
+                            android:textOn="@string/on" />
+
+                        <Switch
+                            android:id="@+id/switch14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="right"
+                            android:checked="false"
+                            android:paddingRight="5dp"
+                            android:text="rs_recale"
+                            android:textColor="@color/wait3"
+                            android:textOff="@string/off"
+                            android:textOn="@string/on" />
+
+                        <Switch
+                            android:id="@+id/switch19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="right"
+                            android:paddingRight="5dp"
+                            android:text="Enable"
+                            android:textColor="@color/wait3" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+
+
+                <SeekBar
+                    android:id="@+id/customSeekBar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:max="200"
+                    android:progress="40"
+                    android:thumb="@drawable/thumb_drawable"
+                    android:progressDrawable="@drawable/custom_progress"/>
+
+                <SeekBar
+                    android:id="@+id/customSeekBar1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:max="200"
+                    android:progress="40"
+                    android:thumb="@drawable/thumb_drawable"
+                    android:progressDrawable="@drawable/custom_progress"/>
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</RelativeLayout>

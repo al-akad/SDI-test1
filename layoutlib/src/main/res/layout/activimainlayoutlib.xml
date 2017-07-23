@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:akt="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:background="@drawable/background"
+   >
+
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+        <!--org.hello.sdi_app.ActivityDiscovery
+            android:id="@+id/gauge_view1"
+            android:layout_width="180dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="1dp"
+            akt:divisions="8"
+            akt:scaleEndValue="5000"
+            akt:showInnerRim="false"
+            akt:showNeedle="true"
+            akt:showOuterBorder="false"
+            akt:showOuterRim="true"
+            akt:showOuterShadow="false"
+            akt:showRangeText="true"
+            akt:showRanges="true"
+            akt:showScale="true"
+            akt:subdivisions="1"
+            akt:textUnit="Current/mA"
+            akt:textUnitSize="0.06"
+            akt:textValueSize="0.15"
+            /-->
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
